@@ -1,0 +1,29 @@
+shell /bin/bash
+shell_args --login
+
+kitty_mod alt
+
+# BEGIN_KITTY_THEME
+# noirbuddy-oxide
+include current-theme.conf
+# END_KITTY_THEME
+
+#FONTS 
+font_family JetBrainsMono Nerd Font
+bold_font JetBrainsMono Nerd Font Bold
+italic_font JetBrainsMono Nerd Font Italic
+bold_italic_font JetBrainsMono Nerd Font Bold Italic
+
+#Window
+remember_window_size no
+background_opacity 0.95
+single_window_margin_width 8
+# active_border_color #00FFFF
+hide_window_decorations yes
+window_resize_step_cells 2
+window_resize_step_lines 2
+initial_window_width  1000
+initial_window_height 600
+
+#Commands
+map F1 new_window_with_cwd

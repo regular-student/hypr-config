@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=IntelliJ IDEA
+Comment=The IntelliJ IDEA IDE
+Exec=/home/disfigured/Documents/idea/bin/idea-wayland.sh
+Icon=/home/disfigured/Documents/idea/bin/idea.svg
+Terminal=false
+Type=Application
+Categories=Development;IDE;
+StartupWMClass=jetbrains-idea

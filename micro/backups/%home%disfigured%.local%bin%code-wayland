@@ -1,0 +1,4 @@
+#!/bin/bash
+export OZONE_PLATFORM=wayland
+export ELECTRON_OZONE_PLATFORM_HINT=wayland
+exec /opt/visual-studio-code/code "$@"
