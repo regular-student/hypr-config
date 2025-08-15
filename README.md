@@ -8,7 +8,7 @@ My current hyprland config.
 
 - Waybar
 
-- No notification and/or menu config
+- Basic wofi and mako config
 
 - sddm: Where is my SDDM theme
 
