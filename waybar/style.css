@@ -9,15 +9,15 @@
 
 window#waybar {
     background-color: transparent;
-    color: #cdd6f4; /* Cor do texto principal (Catppuccin Macchiato Text) */
+    color: #cdd6f4;
 }
 
 #workspaces {
-    background-color: #1e1e2e; /* Base do Catppuccin Macchiato */
+    background-color: #1e1e2e; 
     margin: 5px 5px 5px 10px;
     padding: 0px 5px;
     border-radius: 0px;
-    border: 1px solid #cba6f7; /* Roxo (Mauve) */
+    border: 1px solid #cba6f7;
 }
 
 #workspaces button {
@@ -35,23 +35,22 @@ window#waybar {
 }
 
 #workspaces button:hover {
-    background-color: #C191CA; /* Surface0 */
-    color: #C191CA; /* Mauve */
+    background-color: #C191CA;
+    color: #C191CA; 
     border-radius: 0px;
 }
 
-/* Muda o lado esquerdo, parte ativa do botão */
 #workspaces button.active {
-    background-color: #9F53AC; /* Mauve */
-    color: #1e1e2e; /* Base */
+    background-color: #9F53AC; 
+    color: #1e1e2e;
     border-radius: 0px;
 }
 
 #workspaces button.urgent {
-    background-color: #f38ba8; /* Vermelho (Red) */
+    background-color: #f38ba8;
 }
 
-/* Estilo geral para os módulos */
+/* Módulos */
 #battery,
 #cpu,
 #memory,
@@ -62,16 +61,15 @@ window#waybar {
     padding: 0 10px;
     margin: 5px 0px;
     color: #cdd6f4;
-    background-color: #1e1e2e; /* Base do Catppuccin Macchiato */
+    background-color: #1e1e2e; 
 }
 
-/* Cantos arredondados para os primeiros e últimos módulos */
 #custom-arch {
     margin-left: 10px;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
-    font-size: 18px; /* Ícone um pouco maior */
-    color: #cba6f7; /* Mauve */
+    font-size: 18px; 
+    color: #cba6f7;
 }
 
 #tray {
@@ -81,32 +79,32 @@ window#waybar {
 }
 
 #pulseaudio {
-    color: #89b4fa; /* Azul (Blue) */
+    color: #89b4fa;
 }
 
 #network {
-    color: #a6e3a1; /* Verde (Green) */
+    color: #a6e3a1;
     border-left: 1px solid #313244;
 }
 
 #cpu {
-    color: #f9e2af; /* Amarelo (Yellow) */
+    color: #f9e2af;
     border-left: 1px solid #313244;
 }
 
 #memory {
-    color: #fab387; /* Pêssego (Peach) */
+    color: #fab387; 
 }
 
 #battery {
-    color: #f5c2e7; /* Rosa (Pink) */
+    color: #f5c2e7; 
 }
 
 #battery.charging, #battery.plugged {
-    color: #a6e3a1; /* Verde quando carregando */
+    color: #a6e3a1; 
 }
 
 #battery.critical:not(.charging) {
-    background-color: #f38ba8; /* Vermelho */
+    background-color: #f38ba8;
     color: #1e1e2e;
 }

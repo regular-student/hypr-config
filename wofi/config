@@ -1,0 +1,15 @@
+# Comportamento
+prompt=Look for honesty ->
+style=style.css
+show=drun
+allow_images=true
+image_size=32
+
+# Aparência e Posição
+layer=overlay
+width=50%
+height=40%
+halign=center
+valign=center
+border_radius=15
+term=kitty
