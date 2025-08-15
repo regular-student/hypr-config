@@ -1,74 +1,112 @@
 * {
-	font-size: 13px;
-	font-family: monospace;
+    border: none;
+    border-radius: 0;
+    font-family: "JetBrainsMono Nerd Font", FontAwesome, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    min-height: 0;
 }
 
 window#waybar {
-	background-color: rgba(0, 0, 0, 0.0);
-	color: #fdf6e3;
+    background-color: transparent;
+    color: #cdd6f4; /* Cor do texto principal (Catppuccin Macchiato Text) */
 }
 
-#custom-right-arrow-dark,
-#custom-left-arrow-dark {
-	color: #1a1a1a;
-}
-#custom-right-arrow-light,
-#custom-left-arrow-light {
-	color: #292b2e;
-	background: #1a1a1a;
-}
-
-#workspaces,
-#clock.1,
-#clock.2,
-#clock.3,
-#pulseaudio,
-#memory,
-#cpu,
-#battery,
-#disk,
-#tray {
-	background: #1a1a1a;
+#workspaces {
+    background-color: #1e1e2e; /* Base do Catppuccin Macchiato */
+    margin: 5px 5px 5px 10px;
+    padding: 0px 5px;
+    border-radius: 0px;
+    border: 1px solid #cba6f7; /* Roxo (Mauve) */
 }
 
 #workspaces button {
-	padding: 0 2px;
-	color: #fdf6e3;
+    padding: 0px 4px;
+    color: #B072BB;
+    background-color: transparent;
+    border-radius: 0px;
 }
-#workspaces button.focused {
-	color: #268bd2;
+
+#clock {
+	padding: 0 10px;
+	margin: 5px 0px;
+	color: #cdd6f4;
+	background-color: transparent;
 }
+
 #workspaces button:hover {
-	box-shadow: inherit;
-	text-shadow: inherit;
+    background-color: #C191CA; /* Surface0 */
+    color: #C191CA; /* Mauve */
+    border-radius: 0px;
 }
-#workspaces button:hover {
-	background: #1a1a1a;
-	border: #1a1a1a;
-	padding: 0 3px;
+
+/* Muda o lado esquerdo, parte ativa do botão */
+#workspaces button.active {
+    background-color: #9F53AC; /* Mauve */
+    color: #1e1e2e; /* Base */
+    border-radius: 0px;
+}
+
+#workspaces button.urgent {
+    background-color: #f38ba8; /* Vermelho (Red) */
+}
+
+/* Estilo geral para os módulos */
+#battery,
+#cpu,
+#memory,
+#network,
+#pulseaudio,
+#tray,
+#custom-arch {
+    padding: 0 10px;
+    margin: 5px 0px;
+    color: #cdd6f4;
+    background-color: #1e1e2e; /* Base do Catppuccin Macchiato */
+}
+
+/* Cantos arredondados para os primeiros e últimos módulos */
+#custom-arch {
+    margin-left: 10px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    font-size: 18px; /* Ícone um pouco maior */
+    color: #cba6f7; /* Mauve */
+}
+
+#tray {
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    margin-right: 10px;
 }
 
 #pulseaudio {
-	color: #7e57c2;
-}
-#memory {
-	color: #7e57c2;
-}
-#cpu {
-	color: #7e57c2;
-}
-#battery {
-	color: #FFFFFF;
-}
-#disk {
-	color: #7e57c2;
+    color: #89b4fa; /* Azul (Blue) */
 }
 
-#clock,
-#pulseaudio,
-#memory,
-#cpu,
-#battery,
-#disk {
-	padding: 0 10px;
+#network {
+    color: #a6e3a1; /* Verde (Green) */
+    border-left: 1px solid #313244;
+}
+
+#cpu {
+    color: #f9e2af; /* Amarelo (Yellow) */
+    border-left: 1px solid #313244;
+}
+
+#memory {
+    color: #fab387; /* Pêssego (Peach) */
+}
+
+#battery {
+    color: #f5c2e7; /* Rosa (Pink) */
+}
+
+#battery.charging, #battery.plugged {
+    color: #a6e3a1; /* Verde quando carregando */
+}
+
+#battery.critical:not(.charging) {
+    background-color: #f38ba8; /* Vermelho */
+    color: #1e1e2e;
 }
