@@ -6,28 +6,34 @@ max-visible=5
 output=eDP-1
 
 # =================================================
-# APARÊNCIA
+# APARÊNCIA (Vibe Glossy/Glassmorphism)
 # =================================================
 font=JetBrains Mono 11
 format=󰂚  <b>%s</b>\n%b
 width=350
-padding=10
-margin=15
+padding=15
+margin=20
 anchor=top-right
 border-size=2
-border-radius=15
+border-radius=20
 icons=1
-default-timeout=5000
+default-timeout=6000
 
 # =================================================
-# CORES
+# CORES (Esmeralda & Sky Blue)
 # =================================================
-background-color=#1e1e2eCC
-text-color=#B072BB
-border-color=#B072BB
+# Um fundo azul claro/esmeralda com transparência alta para o efeito "vidro"
+background-color=#1e3a3aAA
+# Texto em branco ou verde muito claro para alto contraste
+text-color=#e0f7fa
+# Borda verde esmeralda brilhante (quase neon)
+border-color=#50fa7b
 
-# Notificações urgentes
+# Notificações urgentes (Variação para um ciano mais forte)
 [urgency=high]
-border-color=#B072BB
-text-color=#f38ba8
-default-timeout=8000
+border-color=#00ffcc
+text-color=#ffffff
+default-timeout=10000
+
+# Estilo para progresso (opcional, se usar scripts que enviam progresso)
+progress-color=over #00a86b

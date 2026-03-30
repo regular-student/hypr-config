@@ -117,12 +117,33 @@ if ! shopt -oq posix; then
 fi
 
 # caminho pro idea
-export PATH=$PATH:~/bin/idea-IC-243.26053.27/bin
+# export PATH=$PATH:~/bin/idea-IC-243.26053.27/bin
 
 export PATH=$PATH:$HOME/.local/bin
 neofetch
 
-PS1='\[\e[38;5;231;1;5m\]✝\[\e[0m\] \[\e[38;5;199;3m\]\W\[\e[0m\] \[\e[38;5;211;1m\]─\[\e[38;5;197m\]>\[\e[0m\] '
+case $((RANDOM % 5)) in
+  0) JAP_LABEL="ここ" ;;
+  1) JAP_LABEL="現在地" ;;
+  2) JAP_LABEL="場所" ;;
+  3) JAP_LABEL="†" ;;
+  4) JAP_LABEL="♥" ;;
+esac
+
+PS1='\[\e[38;5;231;1m\]${JAP_LABEL}\[\e[0m\] \[\e[38;5;32;3m\]\W\[\e[0m\] \[\e[97m\]\\$\[\e[0m\] '
+# PS1='\[\e[38;5;231;1m\]${JAP_LABEL}\[\e[0m\] \[\e[38;5;32;3m\]\W\[\e[0m\] \\$ '
 
 alias ytmp3='f() { yt-dlp "$1" --paths ~/Music -f ba -x --audio-format mp3; }; f'
 alias move='mv *hyprshot.png Screenshots/'
+alias silent='wf-recorder -g "$(slurp)" -f silent_movie.mp4 -c libx264'
+alias diario='source /home/disfigured/love/aleatorio.sh'
+
+#Criado pelo GPT
+# Substitui o 'ls' pelo 'eza' com ícones e outras melhorias
+alias ls='eza --icons --group-directories-first'
+
+# Alias para uma visualização longa (como o 'ls -l')
+alias ll='eza --long --header --icons --git --group-directories-first'
+
+# Alias para uma visualização em árvore
+alias tree='eza --tree'

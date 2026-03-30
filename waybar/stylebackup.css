@@ -1,0 +1,128 @@
+* {
+    border: none;
+    border-radius: 0;
+    font-family: "JetBrainsMono Nerd Font", FontAwesome, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    min-height: 0;
+}
+
+window#waybar {
+    background-color: transparent;
+    color: #cdd6f4;
+}
+
+#workspaces {
+    background-color: #1e1e2e; 
+    margin: 5px 5px 5px 10px;
+    padding: 0px 5px;
+    border-radius: 0px;
+    border: 1px solid #cba6f7;
+}
+
+#workspaces button {
+    padding: 0px 4px;
+    color: #c7afbe;
+    background-color: transparent;
+    border-radius: 0px;
+}
+
+#clock {
+	padding: 0 10px;
+	margin: 5px 0px;
+	/* color: #cdd6f4; */
+  color: #000000;
+	background-color: transparent;
+}
+
+#workspaces button:hover {
+    background-color: #C191CA;
+    color: #C191CA; 
+    border-radius: 0px;
+}
+
+#workspaces button.active {
+    background-color: #9F53AC; 
+    color: #1e1e2e;
+    border-radius: 0px;
+}
+
+#workspaces button.urgent {
+    background-color: #f38ba8;
+}
+
+/* Módulos */
+#battery,
+#cpu,
+#memory,
+#network,
+#pulseaudio,
+#tray,
+#custom-arch,
+#power-profiles-daemon {
+    padding: 0 10px;
+    margin: 5px 0px;
+    color: #eeeeee;
+    background-color: #1e1e2e; 
+}
+
+#custom-arch {
+    margin-left: 10px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    font-size: 18px; 
+    color: #cba6f7;
+}
+
+#tray {
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    margin-right: 10px;
+}
+
+#pulseaudio {
+    color: #c7afbe;
+}
+
+#network {
+    color: #49e190;
+    border-left: 1px solid #313244;
+}
+
+#cpu {
+    color: #6ca5ba;
+    border-left: 1px solid #313244;
+}
+
+#memory {
+    color: #6ca5ba; 
+}
+
+#battery {
+    color: #6ca5ba; 
+}
+
+#battery.charging, #battery.plugged {
+    color: #49e190; 
+}
+
+#battery.critical:not(.charging) {
+    background-color: #f38ba8;
+    color: #1e1e2e;
+}
+
+#power-profiles-daemon {
+    border-left: 1px solid #313244;
+    margin-right: 0px;
+}
+
+/* # 6ca5ba 4e3f5d 
+#c7afbe - Rosa
+#6a4756 - Vinho
+#4e3f5d - Roxo
+
+#6ca5ba - Azul claro
+#6c7a99 - Azul mais escuro
+
+#49e190 - Verde
+ */

@@ -1,7 +1,7 @@
 {
     "layer": "top",
     "position": "top",
-    "height": 25,
+    "height": 32,
     "modules-left": [
         "hyprland/workspaces"
     ],
@@ -13,6 +13,7 @@
         "network",
         "cpu",
         "memory",
+        "power-profiles-daemon",
         "battery",
         "tray"
     ],
@@ -53,6 +54,17 @@
         "format": "󰾆 {}%",
         "on-click": "kitty htop"
     },
+    "power-profiles-daemon": {
+    		"format": "{icon}",
+    		"tooltip-format": "Power profile: {profile}\nDriver: {driver}",
+    		"tooltip": true,
+    		"format-icons": {
+    			"default": "",
+    			"performance": "",
+    			"balanced": "",
+    			"power-saver": ""
+    }
+},
     "battery": {
         "states": {
             "warning": 30,
@@ -77,8 +89,8 @@
         "format-icons": {
             "headphone": "󰋋",
             "hands-free": "󰋎",
+	            "phone": "󰏲",
             "headset": "󰋎",
-            "phone": "󰏲",
             "portable": "󰏲",
             "car": "󰄋",
             "default": ["󰕿", "󰖀", "󰕾"]

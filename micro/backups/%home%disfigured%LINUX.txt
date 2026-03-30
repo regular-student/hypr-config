@@ -1,0 +1,182 @@
+--------------------------------------------------------------------------------
+SOBRE O SISTEMA ESPECIALISTA
+  -- Nome:    SEM NOME
+  -- Autores: 
+
+Operador de maior preced�ncia: conjun��o
+Fator de confian�a m�nimo para aceita��o de regra: 50
+
+SOBRE OS ARQUIVOS
+  Arquivo original: C:\USERS\EDIVANALANDEMATTOSRI\DOWNLOADS\LINUX.BCM
+  O sistema n�o possui recursos de ajuda.
+--------------------------------------------------------------------------------
+
+VARI�VEIS
+
+  Customização
+    Tipo:
+      univalorada
+  Distros
+    Valores:
+      EndeavorOS
+      Arch Linux
+      Nobara
+      Ubuntu
+      Alpine
+      Gentoo
+      Debian
+      CentOS
+      Linux Mint
+      PopOS
+    Tipo:
+      multivalorada
+  Estabilidade
+    Valores:
+      Stable
+      Rolling release
+    Tipo:
+      univalorada
+  Experiencia
+    Valores:
+      Primeira vez
+      N�o � a primeira vez
+    Tipo:
+      univalorada
+  Finalidade
+    Valores:
+      Jogos
+      Servidor
+      Desenvolvimento
+    Tipo:
+      univalorada
+  RAM
+    Valores:
+      Tanto faz
+      Leve
+    Tipo:
+      univalorada
+
+OBJETIVOS
+
+  Distros
+
+REGRAS
+
+  Regra 1
+    SE Experiencia = Primeira vez
+    ENT�O Distros = Linux Mint CNF 90%
+
+  Regra 2
+    SE Experiencia = N�o � a primeira vez
+    E  RAM = Leve
+    ENT�O Distros = Alpine CNF 80%
+
+  Regra 3
+    SE Experiencia = N�o � a primeira vez
+    E  Customiza��o = N�o
+    E  Finalidade = Jogos
+    E  RAM = Leve
+    ENT�O Distros = PopOS CNF 100%
+
+  Regra 4
+    SE Experiencia = N�o � a primeira vez
+    E  Customiza��o = Sim
+    E  Estabilidade = Rolling release
+    E  Finalidade = Desenvolvimento
+    E  RAM = Leve
+    ENT�O Distros = Arch Linux CNF 100%
+          Distros = EndeavorOS CNF 100%
+
+  Regra 5
+    SE Experiencia = N�o � a primeira vez
+    E  RAM = Tanto faz
+    E  Customiza��o = Sim
+    E  Estabilidade = Stable
+    E  Finalidade = Desenvolvimento
+    ENT�O Distros = Debian CNF 100%
+
+  Regra 6
+    SE Experiencia = N�o � a primeira vez
+    E  RAM = Tanto faz
+    E  Customiza��o = N�o
+    E  Estabilidade = Stable
+    E  Finalidade = Desenvolvimento
+    ENT�O Distros = Ubuntu CNF 100%
+
+  Regra 7
+    SE Experiencia = N�o � a primeira vez
+    E  RAM = Leve
+    E  Customiza��o = Sim
+    E  Estabilidade = Stable
+    E  Finalidade = Desenvolvimento
+    ENT�O Distros = Gentoo CNF 100%
+
+  Regra 8
+    SE Experiencia = N�o � a primeira vez
+    E  RAM = Tanto faz
+    E  Customiza��o = Sim
+    E  Estabilidade = Rolling release
+    E  Finalidade = Desenvolvimento
+    ENT�O Distros = EndeavorOS CNF 100%
+          Distros = Arch Linux CNF 100%
+
+  Regra 9
+    SE Experiencia = N�o � a primeira vez
+    E  RAM = Leve
+    E  Customiza��o = N�o
+    E  Finalidade = Servidor
+    ENT�O Distros = Alpine CNF 100%
+
+  Regra 10
+    SE Experiencia = N�o � a primeira vez
+    E  RAM = Tanto faz
+    E  Customiza��o = N�o
+    E  Finalidade = Servidor
+    ENT�O Distros = CentOS CNF 100%
+
+  Regra 11
+    SE Experiencia = N�o � a primeira vez
+    E  RAM = Tanto faz
+    E  Customiza��o = Sim
+    E  Estabilidade = Rolling release
+    E  Finalidade = Servidor
+    ENT�O Distros = EndeavorOS CNF 100%
+          Distros = Arch Linux CNF 100%
+
+  Regra 12
+    SE Experiencia = N�o � a primeira vez
+    E  RAM = Leve
+    E  Customiza��o = Sim
+    E  Finalidade = Jogos
+    ENT�O Distros = Nobara CNF 100%
+
+  Regra 13
+    SE Experiencia = N�o � a primeira vez
+    E  RAM = Tanto faz
+    E  Customiza��o = Sim
+    E  Finalidade = Jogos
+    ENT�O Distros = EndeavorOS CNF 100%
+
+PERGUNTAS
+
+  Vari�vel:Customiza��o
+     Pergunta:"Voce quer um sistema altamente customiz�vel?"
+     Motivo:"Algumas interfaces gr�ficas n�o permitem grandes customiza��es
+  Vari�vel:Estabilidade
+     Pergunta:"Prefere uma distro stable ou rolling release?"
+     Motivo:"stable - Demora pra lan�ar atualiza��o, mas quando lan�a, a atualiza��o vem totalmente segura 
+            "e sem falhas
+            "rolling release - Lan�a atualiza��es toda hora, falhas podem acontecer por causa disso.
+  Variçãel:Experiencia
+     Pergunta:"Primeira vez usando Linux?"
+     Motivo:"Pra usu�rios de primeira vez, recomenda-se o Linux Mint por sua semelhan�a com windows
+  Vari�vel:RAM
+     Pergunta:"Voce precisa que o sistema seja leve?"
+     Motivo:"Linux pode ser pesado dependendo da interface gr�fica
+
+--------------------------------------------------------------------------------
+Gerado com o Expert SINTA vers�o 1.1b
+(c) 1997 - Universidade Federal do Cear�
+           Laborat�rio de Intelig�ncia Artificial
+           LIA/UFC
+--------------------------------------------------------------------------------
